@@ -26,16 +26,22 @@ public class GuitarController : MonoBehaviour
         foreach (var chord in _chords)
             chord.GetComponent<Renderer>().material.color = Color.white;
 
+        _chords[0].GetComponent<Renderer>().material.color = Color.red;
+        _chords[1].GetComponent<Renderer>().material.color = Color.green;
+        _chords[2].GetComponent<Renderer>().material.color = Color.yellow;
+        _chords[3].GetComponent<Renderer>().material.color = Color.blue;
+        _chords[4].GetComponent<Renderer>().material.color = Color.magenta;
+
         if (Input.GetKey(L2))
-            _chords[0].GetComponent<Renderer>().material.color = Color.red;
+            _chords[0].GetComponent<Renderer>().material.color = Color.white;
         if (Input.GetKey(L1))
-            _chords[1].GetComponent<Renderer>().material.color = Color.red;
+            _chords[1].GetComponent<Renderer>().material.color = Color.white;
         if (Input.GetKey(R1))
-            _chords[2].GetComponent<Renderer>().material.color = Color.red;
+            _chords[2].GetComponent<Renderer>().material.color = Color.white;
         if (Input.GetKey(R2))
-            _chords[3].GetComponent<Renderer>().material.color = Color.red;
+            _chords[3].GetComponent<Renderer>().material.color = Color.white;
         if (Input.GetKey(X))
-            _chords[4].GetComponent<Renderer>().material.color = Color.red;
+            _chords[4].GetComponent<Renderer>().material.color = Color.white;
 
     }
 }
